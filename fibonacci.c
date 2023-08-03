@@ -22,6 +22,50 @@ void sum(int n){
     printf("%d", ans);
 }
 
+void evenNumber(int n){
+  if(n==0) printf("0");
+  else if(n==1) printf("No even numbers");
+  else{
+    int fib[n],i;
+    fib[0]=0;
+    fib[1]=1;
+    for (int i=2;i<=n-1;i++)
+    {
+      fib[i]=fib[i-1]+fib[i-2];
+    }
+
+ 
+
+    for (int i=0;i<=n-1;i++)
+    {
+      if(fib[i]%2==0)
+        printf("%d", fib[i]);
+    }
+  }
+}
+
+void oddNumber(int n){
+  if(n==1) printf("1");
+  else if(n==0) printf("No odd numbers");
+  else{
+    int fib[n],i;
+    fib[0]=0;
+    fib[1]=1;
+    for (int i=2;i<=n-1;i++)
+    {
+      fib[i]=fib[i-1]+fib[i-2];
+    }
+
+ 
+
+    for (int i=0;i<=n-1;i++)
+    {
+      if(fib[i]%2!=0)
+        printf("%d", fib[i]);
+    }
+  }
+}
+
 int main()  
 {  
     int n;  
@@ -53,25 +97,4 @@ generateFibonacciSeries(int n)
       printf("%d", fib[i]);
     }
 
-}
-void evenNumber(int n){
-  if(n==0) printf("0");
-  else if(n==1) printf("No even numbers");
-  else{
-    int fib[n],i;
-    fib[0]=0;
-    fib[1]=1;
-    for (int i=2;i<=n-1;i++)
-    {
-      fib[i]=fib[i-1]+fib[i-2];
-    }
-
- 
-
-    for (int i=0;i<=n-1;i++)
-    {
-      if(fib[i]%2==0)
-        printf("%d", fib[i]);
-    }
-  }
 }
