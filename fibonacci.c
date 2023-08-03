@@ -1,15 +1,20 @@
-generateFibonacciSeries(int);  
-  
+#include<stdio.h>
+void generateFibonacciSeries(int);  
 int main()  
 {  
     int n;  
     printf("How many number of series? :\n");  
     scanf("%d", &n);  
-    FibonacciSeries(n);  
+    printf("series:");  
+    generateFibonacciSeries(n);
+    printf("\nEvene:");  
+    evenNumber(n);
+    printf("\nSum :");  
+    sum(n);
     return 0;  
 }  
-  
-generateFibonacciSeries(int num)  
+
+generateFibonacciSeries(int n)  
 {  
     int fib[n],i;
     fib[0]=0;
@@ -18,12 +23,12 @@ generateFibonacciSeries(int num)
     {
       fib[i]=fib[i-1]+fib[i-2];
     }
+
+ 
+
     for (i=0;i<=n-1;i++)
     {
-      printf("%d",fib[i]);
+      printf("%d", fib[i]);
     }
-}  
 
-int evennumber(int n){ "This is a even number"}
-
-
+}
