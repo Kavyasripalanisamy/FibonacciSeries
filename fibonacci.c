@@ -17,7 +17,7 @@ void sum(int n){
       ans += fib[i];
     }
 
-    ans -= 1;
+    ans += 1;
 
     printf("%d", ans);
 }
