@@ -64,6 +64,10 @@ void oddNumber(int n){
   }
 }
 
+void getMaxValue(int n){
+
+}
+
 int main()  
 {  
     int n;  
