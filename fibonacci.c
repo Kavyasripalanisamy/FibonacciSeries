@@ -12,12 +12,10 @@ void sum(int n){
 
     int ans = 0;
 
-    for (int i=0;i<=n-1;i++)
+    for (int i=0;i<=n;i++)
     {
       ans += fib[i];
     }
-
-    ans += 1;
 
     printf("%d", ans);
 }
