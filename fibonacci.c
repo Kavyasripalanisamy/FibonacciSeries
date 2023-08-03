@@ -42,6 +42,21 @@ void evenNumber(int n){
   }
 }
 
+void sumSeries(int n){
+  int n1= 0;
+  int n2 = 1;
+  int ans  = 0;
+
+  for(int i=1; i<n; i++){
+    int n3 = n1+n2;
+    n1 = n2;
+    n2 = n3;
+    ans += n3;
+  }
+
+  printf("%d", ans);
+}
+
 void oddNumber(int n){
   if(n==1) printf("1");
   else if(n==0) printf("No odd numbers");
