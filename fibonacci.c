@@ -64,6 +64,19 @@ void oddNumber(int n){
   }
 }
 
+void nthElement(int n){
+  int n1,n2,n3,i;
+  n1=0;
+  n2=1;
+    for (i=2;i<=n-1;i++)
+    {
+      n3=n1+n2;
+      n1=n2;
+      n2=n3;
+    }
+}
+
+
 int main()  
 {  
     int n;  
