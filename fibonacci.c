@@ -23,7 +23,3 @@ generateFibonacciSeries(int num)
       printf("%d",fib[i]);
     }
 }  
-
-int evennumber(int n){ "This is a even number"}
-
-
