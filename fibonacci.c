@@ -14,7 +14,7 @@ void sum(int n){
 
     for (int i=0;i<=n+1;i++)
     {
-      ans += fib[i];
+      ans += fib[i+1];
     }
 
     printf("%d", ans);
@@ -120,7 +120,7 @@ generateFibonacciSeries(int n)
 
  
 
-    for (i=0;i<=n-1;i++)
+    for (i=0;i>=n-1;i++)
     {
       printf("%d", fib[i]);
     }
