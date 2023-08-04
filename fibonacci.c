@@ -78,6 +78,7 @@ void oddNumber(int n){
     }
   }
 }
+<<<<<<< HEAD
 void getMaxValue(int n){
 
 }
@@ -93,6 +94,8 @@ void nthElement(int n){
     }
 }
 
+=======
+>>>>>>> parent of 4d2cacc (Task 7)
 
 int main()  
 {  
